@@ -33,22 +33,13 @@
         opacity: 1;
         transform: translateY(0);
       }
-      /* Class untuk kotak foto kosong */
-      .photo-placeholder {
-        background-color: #e5e5e5;
-        border: 2px dashed #9ca3af;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #9ca3af;
-      }
     </style>
   </head>
   <body class="overflow-x-hidden">
 
     <div class="block md:hidden bg-[#F2F2F2]">
         
-        <div class="min-h-screen relative flex flex-col p-6 items-center justify-between overflow-hidden border-8 border-white mb-4">
+        <div class="min-h-screen relative flex flex-col p-6 items-center justify-between overflow-hidden border-8 border-white mb-4 bg-white">
             <div class="absolute inset-0 bg-grid opacity-30 pointer-events-none"></div>
 
             <div class="w-full flex justify-between items-center z-10 pt-4">
@@ -92,7 +83,7 @@
                 </div>
             </div>
             <div class="w-full text-center z-10 mt-6 mb-4">
-                 <p class="text-[10px] text-gray-400">Scroll ke bawah untuk Info Kadep & Proker ↓</p>
+                 <p class="text-[10px] text-gray-400">Scroll ke bawah untuk Info HUAL ↓</p>
             </div>
         </div>
 
@@ -103,36 +94,52 @@
 
              <div class="w-full grid grid-cols-2 gap-4 mb-8">
                 <div class="flex flex-col items-center">
-                    <div class="w-full aspect-[3/4] photo-placeholder rounded-xl mb-2 relative bg-gray-100">
-                        <svg class="w-12 h-12 text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                    <div class="w-full aspect-[3/4] rounded-xl mb-2 border-2 border-dashed border-gray-300 relative overflow-hidden bg-gray-100">
+                        <img src="1.png" alt="Kadep" class="w-full h-full object-cover">
                         <div class="absolute bottom-2 right-2 bg-[#FFD600] text-[10px] font-bold px-2 border border-black">KADEP</div>
                     </div>
                     <p class="font-bold text-center text-sm leading-tight">Achmad Atha<br>Zayyan</p>
                 </div>
+                
                 <div class="flex flex-col items-center">
-                    <div class="w-full aspect-[3/4] photo-placeholder rounded-xl mb-2 relative bg-gray-100">
-                        <svg class="w-12 h-12 text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                    <div class="w-full aspect-[3/4] rounded-xl mb-2 border-2 border-dashed border-gray-300 relative overflow-hidden bg-gray-100">
+                        <img src="image.png" alt="Sekdep" class="w-full h-full object-cover">
                          <div class="absolute bottom-2 right-2 bg-[#4285F4] text-white text-[10px] font-bold px-2 border border-black">SEKDEP</div>
                     </div>
                     <p class="font-bold text-center text-sm leading-tight">Muhammad<br>Azani</p>
                 </div>
              </div>
 
-             <div class="w-full bg-[#F2F2F2] p-5 rounded-2xl border-2 border-black shadow-[4px_4px_0px_0px_black]">
+             <div class="w-full bg-[#F2F2F2] p-5 rounded-2xl border-2 border-black shadow-[4px_4px_0px_0px_black] mb-8">
                 <h3 class="font-bold text-lg mb-3 flex items-center gap-2">
                     <span class="w-3 h-3 bg-[#34A853] rounded-full border border-black"></span>
                     Program Kerja
                 </h3>
                 <ul class="space-y-2 text-sm font-medium text-gray-700">
-                    <li class="flex gap-2"><span>1.</span> Informatics Goes to School (IGTS)</li>
+                    <li class="flex gap-2"><span>1.</span> IGTS (Informatics Goes to School)</li>
                     <li class="flex gap-2"><span>2.</span> Support HMIF</li>
                     <li class="flex gap-2"><span>3.</span> Kunjungan Kerja</li>
-                    <li class="flex gap-2"><span>4.</span> Informatika Kunjung Industri (IKI)</li>
+                    <li class="flex gap-2"><span>4.</span> IKI (Informatika Kunjung Industri)</li>
                     <li class="flex gap-2"><span>5.</span> Aspirasi Mahasiswa</li>
                 </ul>
              </div>
 
-             <div class="mt-auto pt-6 pb-2">
+             <div class="w-full mt-auto">
+                 <h3 class="font-bold text-center mb-2 text-sm">KENAPA HARUS HUAL?</h3>
+                 <div class="w-full aspect-video bg-black rounded-xl border-2 border-black shadow-[4px_4px_0px_0px_#FFD600] flex items-center justify-center relative group cursor-pointer overflow-hidden">
+                     
+                     <div class="absolute inset-0 bg-gray-800 opacity-50"></div>
+                     
+                     <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center z-10 pl-1 group-hover:scale-110 transition-transform">
+                         <svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                     </div>
+                     
+                     <p class="absolute bottom-3 text-white text-[10px] font-mono tracking-widest z-10">WATCH VIDEO PROFILE</p>
+                     
+                     </div>
+             </div>
+             
+             <div class="mt-4 pb-2">
                 <span class="text-xs font-bold bg-black text-white px-4 py-2 rounded-full">HUAL HMIF 2026</span>
              </div>
         </div>
@@ -148,7 +155,7 @@
                 <a href="#about" class="text-sm font-bold hover:text-[#FFD600] transition-colors">About</a>
                 <a href="#leaders" class="text-sm font-bold hover:text-[#4285F4] transition-colors">Leaders</a>
                 <a href="#proker" class="text-sm font-bold hover:text-[#34A853] transition-colors">Proker</a>
-                <a href="#timeline" class="text-sm font-bold hover:underline transition-colors">Timeline</a>
+                <a href="#video" class="text-sm font-bold hover:underline transition-colors">Video</a>
             </div>
         </nav>
 
@@ -175,6 +182,7 @@
                 <div class="relative flex justify-center">
                     <div class="absolute w-[500px] h-[500px] bg-[#FFD600] rounded-full mix-blend-multiply filter blur-3xl opacity-40"></div>
                     <div class="absolute top-0 right-10 w-[400px] h-[400px] bg-[#4285F4] rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
+                    
                     <div class="relative z-10 bg-white p-8 rounded-3xl border-4 border-black shadow-[15px_15px_0px_0px_rgba(0,0,0,1)] rotate-3 hover:rotate-0 transition-transform duration-500 w-full max-w-md">
                         <div class="flex gap-2 mb-6">
                             <div class="w-4 h-4 rounded-full bg-red-500 border border-black"></div>
@@ -197,91 +205,63 @@
         </header>
 
         <section id="about" class="py-24 px-16 bg-white rounded-t-[4rem] relative z-20 shadow-[-10px_-10px_30px_rgba(0,0,0,0.05)] -mt-20">
-            <div class="max-w-4xl mx-auto text-center reveal">
-                 <h2 class="text-5xl font-bold mb-8">Tentang <span class="text-[#4285F4]">HUAL</span></h2>
-                 <p class="text-xl text-gray-600 leading-relaxed text-justify md:text-center">
-                    Departemen <strong>Hubungan Antar Lembaga (HUAL)</strong> merupakan departemen yang bertugas untuk menjaga dan memperluas jaringan dengan berbagai lembaga-lembaga baik dalam lingkup eksternal maupun internal di Jurusan Informatika USK.
-                 </p>
-                 <br>
-                 <p class="text-xl text-gray-600 leading-relaxed text-justify md:text-center">
-                    Dalam kegiatannya, departemen ini akan memberikan pengalaman bertemu, berkomunikasi serta bersosialisasi yang berkesinambungan untuk menjalin hubungan baik dengan berbagai macam lembaga terkait.
-                 </p>
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center reveal mb-16">
+                     <h2 class="text-5xl font-bold mb-8">Apa itu <span class="text-[#4285F4]">HUAL?</span></h2>
+                     <p class="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                        Departemen <strong>Hubungan Antar Lembaga (HUAL)</strong> adalah garda terdepan dalam membangun citra HMIF. Kami bertugas menjaga dan memperluas jaringan dengan berbagai instansi, komunitas, dan lembaga, baik di dalam maupun luar lingkup Universitas Syiah Kuala.
+                     </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8 reveal">
+                    <div class="p-8 bg-[#F9F9F9] rounded-2xl border border-gray-200 hover:border-[#FFD600] transition-colors">
+                        <div class="w-12 h-12 bg-[#FFD600] rounded-full mb-4 flex items-center justify-center font-bold text-xl">🤝</div>
+                        <h3 class="text-xl font-bold mb-2">Networking</h3>
+                        <p class="text-gray-500 text-sm">Membangun relasi luas dengan pihak eksternal yang bermanfaat untuk masa depan.</p>
+                    </div>
+                    <div class="p-8 bg-[#F9F9F9] rounded-2xl border border-gray-200 hover:border-[#4285F4] transition-colors">
+                        <div class="w-12 h-12 bg-[#4285F4] text-white rounded-full mb-4 flex items-center justify-center font-bold text-xl">🗣️</div>
+                        <h3 class="text-xl font-bold mb-2">Negotiation</h3>
+                        <p class="text-gray-500 text-sm">Mengasah kemampuan diplomasi dan negosiasi dalam kerjasama antar lembaga.</p>
+                    </div>
+                    <div class="p-8 bg-[#F9F9F9] rounded-2xl border border-gray-200 hover:border-[#34A853] transition-colors">
+                        <div class="w-12 h-12 bg-[#34A853] text-white rounded-full mb-4 flex items-center justify-center font-bold text-xl">🚀</div>
+                        <h3 class="text-xl font-bold mb-2">Branding</h3>
+                        <p class="text-gray-500 text-sm">Menjadi wajah himpunan yang memperkenalkan kualitas Informatika ke dunia luar.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-       <section id="leaders" class="py-20 px-16 bg-[#F9F9F9] relative z-20">
-  <div class="max-w-5xl mx-auto reveal">
-    
-    <h2 class="text-5xl font-bold mb-16 text-center">
-      Meet the Leaders
-    </h2>
-    
-    <div class="flex justify-center gap-12 md:gap-24">
-      
-      <!-- KADEP -->
-      <div class="flex flex-col items-center group">
-        
-        <div class="w-64 h-80 rounded-2xl overflow-hidden shadow-lg 
-                    transition-all duration-500 
-                    group-hover:shadow-2xl 
-                    group-hover:-translate-y-2 
-                    border-2 border-transparent 
-                    group-hover:border-[#FFD600] 
-                    relative select-none"
-             oncontextmenu="return false">
+        <section id="leaders" class="py-20 px-16 bg-[#F9F9F9] relative z-20">
+            <div class="max-w-5xl mx-auto reveal">
+                <h2 class="text-5xl font-bold mb-16 text-center">Meet the Leaders</h2>
+                
+                <div class="flex justify-center gap-12 md:gap-24">
+                    <div class="flex flex-col items-center group">
+                        <div class="w-64 h-80 rounded-2xl shadow-lg border-2 border-transparent group-hover:border-[#FFD600] bg-white relative overflow-hidden">
+                             <img src="1.png" alt="Achmad Atha Zayyan" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        </div>
+                        <div class="mt-6 text-center">
+                            <h3 class="text-2xl font-bold">Achmad Atha Zayyan</h3>
+                            <p class="text-gray-500 font-medium tracking-wide mt-1">Ketua Departemen</p>
+                            <div class="h-1 w-12 bg-[#FFD600] mx-auto mt-3"></div>
+                        </div>
+                    </div>
 
-          <img src="1.png"
-               alt="Achmad Atha Zayyan"
-               draggable="false"
-               class="w-full h-full object-cover object-center 
-                      transition-transform duration-700 
-                      group-hover:scale-110 
-                      pointer-events-none select-none">
-        </div>
-        
-        <div class="mt-6 text-center">
-          <h3 class="text-2xl font-bold">Achmad Atha Zayyan</h3>
-          <p class="text-gray-500 font-medium tracking-wide mt-1">
-            Ketua Departemen
-          </p>
-          <div class="h-1 w-12 bg-[#FFD600] mx-auto mt-3"></div>
-        </div>
-      </div>
-
-      <!-- SEKDEP -->
-      <div class="flex flex-col items-center group">
-        
-        <div class="w-64 h-80 rounded-2xl overflow-hidden shadow-lg 
-                    transition-all duration-500 
-                    group-hover:shadow-2xl 
-                    group-hover:-translate-y-2 
-                    border-2 border-transparent 
-                    group-hover:border-[#4285F4] 
-                    relative select-none"
-             oncontextmenu="return false">
-
-          <img src="image.png"
-               alt="Muhammad Azani"
-               draggable="false"
-               class="w-full h-full object-cover object-center 
-                      transition-transform duration-700 
-                      group-hover:scale-110 
-                      pointer-events-none select-none">
-        </div>
-        
-        <div class="mt-6 text-center">
-          <h3 class="text-2xl font-bold">Muhammad Azani</h3>
-          <p class="text-gray-500 font-medium tracking-wide mt-1">
-            Sekretaris Departemen
-          </p>
-          <div class="h-1 w-12 bg-[#4285F4] mx-auto mt-3"></div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
+                    <div class="flex flex-col items-center group">
+                        <div class="w-64 h-80 rounded-2xl shadow-lg border-2 border-transparent group-hover:border-[#4285F4] bg-white relative overflow-hidden">
+                            <img src="image.png" alt="Muhammad Azani" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        </div>
+                        <div class="mt-6 text-center">
+                            <h3 class="text-2xl font-bold">Muhammad Azani</h3>
+                            <p class="text-gray-500 font-medium tracking-wide mt-1">Sekretaris Departemen</p>
+                            <div class="h-1 w-12 bg-[#4285F4] mx-auto mt-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section id="proker" class="py-24 px-16 bg-white relative z-20">
             <div class="max-w-5xl mx-auto reveal">
@@ -295,22 +275,18 @@
                         <span class="text-4xl font-black text-gray-200 group-hover:text-black/20">01</span>
                         <h4 class="text-xl font-bold mt-2">Informatics Goes to School (IGTS)</h4>
                     </div>
-
                     <div class="p-6 border-2 border-black rounded-xl hover:bg-[#4285F4] hover:text-white transition-colors group cursor-default">
                         <span class="text-4xl font-black text-gray-200 group-hover:text-white/30">02</span>
                         <h4 class="text-xl font-bold mt-2">Support HMIF</h4>
                     </div>
-
                     <div class="p-6 border-2 border-black rounded-xl hover:bg-[#34A853] hover:text-white transition-colors group cursor-default">
                         <span class="text-4xl font-black text-gray-200 group-hover:text-white/30">03</span>
                         <h4 class="text-xl font-bold mt-2">Kunjungan Kerja</h4>
                     </div>
-
                     <div class="p-6 border-2 border-black rounded-xl hover:bg-black hover:text-white transition-colors group cursor-default">
                         <span class="text-4xl font-black text-gray-200 group-hover:text-white/30">04</span>
                         <h4 class="text-xl font-bold mt-2">Informatika Kunjung Industri (IKI)</h4>
                     </div>
-
                     <div class="p-6 border-2 border-black rounded-xl hover:bg-gray-200 transition-colors group cursor-default">
                         <span class="text-4xl font-black text-gray-200 group-hover:text-black/10">05</span>
                         <h4 class="text-xl font-bold mt-2">Aspirasi Mahasiswa</h4>
@@ -350,8 +326,25 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section id="video" class="py-20 px-16 bg-white relative z-20">
+            <div class="max-w-4xl mx-auto reveal text-center">
+                <h2 class="text-4xl font-bold mb-8">Discover HUAL</h2>
                 
-                <div class="text-center mt-20">
+                <div class="w-full aspect-video bg-black rounded-3xl border-4 border-black shadow-[10px_10px_0px_0px_#FFD600] relative flex items-center justify-center group cursor-pointer overflow-hidden">
+                    <div class="absolute inset-0 bg-gray-800 opacity-60 transition-opacity group-hover:opacity-40"></div>
+                    
+                    <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center z-10 pl-2 group-hover:scale-110 transition-transform duration-300">
+                         <svg class="w-10 h-10 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    </div>
+                    
+                    <p class="absolute bottom-6 text-white font-mono tracking-widest z-10 font-bold text-lg">WATCH OUR PROFILE</p>
+                    
+                    </div>
+
+                <div class="mt-20">
                     <p class="text-gray-400 font-mono">HMIF USK © 2026</p>
                 </div>
             </div>
@@ -371,14 +364,11 @@
         }
       }
       window.addEventListener('scroll', reveal);
+      window.addEventListener('load', reveal);
 
-      document.addEventListener("contextmenu", function(e){
-  e.preventDefault();
-});
-
-document.addEventListener("dragstart", function(e){
-  e.preventDefault();
-});
+      // Disable drag/context menu for simple protection
+      document.addEventListener("contextmenu", function(e){ e.preventDefault(); });
+      document.addEventListener("dragstart", function(e){ e.preventDefault(); });
     </script>
   </body>
 </html>
