@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HUAL HMIF USK</title>
     
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
@@ -33,6 +32,24 @@
       .reveal.active {
         opacity: 1;
         transform: translateY(0);
+      }
+      /* Class untuk kotak foto/video kosong */
+      .placeholder-box {
+        background-color: #e5e5e5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #9ca3af;
+        position: relative;
+        overflow: hidden;
+      }
+      .placeholder-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
       }
     </style>
   </head>
@@ -127,17 +144,17 @@
 
              <div class="w-full mt-auto">
                  <h3 class="font-bold text-center mb-2 text-sm">KENAPA HARUS HUAL?</h3>
-                 <div class="w-full aspect-video bg-black rounded-xl border-2 border-black shadow-[4px_4px_0px_0px_#FFD600] flex items-center justify-center relative group cursor-pointer overflow-hidden">
-                     
-                     <div class="absolute inset-0 bg-gray-800 opacity-50"></div>
-                     
-                     <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center z-10 pl-1 group-hover:scale-110 transition-transform">
-                         <svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                     </div>
-                     
-                     <p class="absolute bottom-3 text-white text-[10px] font-mono tracking-widest z-10">WATCH VIDEO PROFILE</p>
-                     
-                     </div>
+                 
+                 <div class="w-full aspect-video bg-black rounded-xl border-2 border-black shadow-[4px_4px_0px_0px_#FFD600] overflow-hidden">
+                     <iframe 
+                        class="w-full h-full"
+                        src="https://www.youtube.com/embed/Jxi4w_NTBsY"
+                        title="HUAL Profile"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                 </div>
              </div>
              
              <div class="mt-4 pb-2">
@@ -334,16 +351,16 @@
             <div class="max-w-4xl mx-auto reveal text-center">
                 <h2 class="text-4xl font-bold mb-8">Discover HUAL</h2>
                 
-                <div class="w-full aspect-video bg-black rounded-3xl border-4 border-black shadow-[10px_10px_0px_0px_#FFD600] relative flex items-center justify-center group cursor-pointer overflow-hidden">
-                    <div class="absolute inset-0 bg-gray-800 opacity-60 transition-opacity group-hover:opacity-40"></div>
-                    
-                    <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center z-10 pl-2 group-hover:scale-110 transition-transform duration-300">
-                         <svg class="w-10 h-10 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                    </div>
-                    
-                    <p class="absolute bottom-6 text-white font-mono tracking-widest z-10 font-bold text-lg">WATCH OUR PROFILE</p>
-                    
-                    </div>
+                <div class="w-full aspect-video bg-black rounded-3xl border-4 border-black shadow-[10px_10px_0px_0px_#FFD600] relative overflow-hidden">
+                    <iframe 
+                        class="w-full h-full"
+                        src="https://www.youtube.com/embed/Jxi4w_NTBsY"
+                        title="HUAL Profile"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
 
                 <div class="mt-20">
                     <p class="text-gray-400 font-mono">HMIF USK © 2026</p>
